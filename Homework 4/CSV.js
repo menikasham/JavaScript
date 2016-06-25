@@ -21,14 +21,16 @@ var users = [
         ]
     }
 ];
-user = {};
-user.firstName = prompt ('Input your name:', 'Shamil');
-user.lastName = prompt('Input your lastname','Burkhanov');
-user.birthDay = prompt('Input ypur birthdate','27.06.1984');
-user.phones = [];
+function addUser() {
+    user.firstName = prompt('Input your name:', 'Shamil');
+    user.lastName = prompt('Input your lastname', 'Burkhanov');
+    user.birthDay = prompt('Input ypur birthdate', '27.06.1984');
+    user.phones = [];
     for (var j = 0; j < 2; j++) {
-        user.phones.push (user.phone = prompt('Input your phone number', '123456789'))
+        user.phones.push(user.phone = prompt('Input your phone number', '123456789'))
     }
+}
+uaer = addUser();
 users.push(user);
 
 for (var i = 0; i < users.length; i++) {
